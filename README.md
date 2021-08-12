@@ -1,3 +1,7 @@
+#Disclaimer
+
+it is a test scrypt I made it for my self education.
+
 # Digital_Ocean_export script
 
 Digital_Ocean_export is a Python 3.10 script witch exports data from account from Digital Ocean Cloud Provider.
