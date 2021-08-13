@@ -49,7 +49,8 @@ res=(chf(choose))
 with open ((res[1] + ".json"), "a") as file:
         file.write("\n")
         file.write(json.dumps(auth(res[0],res[1])))
-print("Done! Check your directory")
+print("Done! Check your directory for ",res[1],".json \n")
+input("Press any key to exit")
 
 
 exit()        
