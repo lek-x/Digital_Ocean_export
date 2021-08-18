@@ -6,6 +6,7 @@ drop = "dropelts"
 keys = "ssh_keys"
 image = "images"
 
+### Function for choosing endpoints
 def chf(a,**kwargs):
         match choose:
                 case 1:
@@ -25,6 +26,7 @@ def chf(a,**kwargs):
 
         return endpt,filename
 
+### Function for authorization
 def auth(endpt,filename):
         auth_header=input("Insert your authorization token\n>>>")
         data = {}
@@ -43,12 +45,16 @@ print("""Digital Ocean API endpoints: \n
 0. Exit\n""")
 
 
-
+### Waiting user's input
 choose = int(input("Choose endpoint \n >>"))
-res=(chf(choose))        
+res=(chf(choose)) 
+
+### Saving data       
 with open ((res[1] + ".json"), "a") as file:
         file.write("\n")
         file.write(json.dumps(auth(res[0],res[1])))
+
+### Exiting		
 print("Done! Check your directory for ",res[1],".json \n")
 input("Press any key to exit")
 
