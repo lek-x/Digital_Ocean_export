@@ -47,6 +47,8 @@ print("""Digital Ocean API endpoints: \n
 
 ### Waiting user's input
 choose = int(input("Choose endpoint \n >>"))
+
+### Using functions
 res=(chf(choose)) 
 
 ### Saving data       
