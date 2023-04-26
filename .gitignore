@@ -1,1 +1,5 @@
 *.json
+settings.ini
+*.csv
+tags.py
+jup.ipynb

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "digital-oc-py"
+version = "0.1.0"
+description = ""
+authors = ["Roman <mmm.romka@gmail.com>"]
+readme = "README.md"
+packages = [{include = "digital_oc_py"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tkinter-page = "^0.0.5"
+tk = "^0.1.0"
+pandas = "^2.0.0"
+requests = "^2.28.2"
+ipython = "^8.12.0"
+jinja2 = "^3.1.2"
+tabulate = "^0.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
